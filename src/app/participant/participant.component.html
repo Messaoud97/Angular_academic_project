@@ -1,0 +1,24 @@
+<div class='ajout-refresh'>
+    <img [routerLink]="['/add-participant']" id='t3' SRC="assets/image005.png" width="60px" height="60px"> <img id='t4' SRC="assets/image008.png" width="60px" height="60px" >
+    </div>
+    
+    
+    <div class='List-Participant'>
+      <table>
+        <tr>
+          <th>    List Participants  </th>
+        </tr>
+    <tbody *ngFor="let participant of participants ; index as i"
+   >
+
+   
+      <tr>
+        
+        <td style="height: 70px;  ">
+         <span id='Name'>{{participant.nom}} {{participant.prenom}}   {{participant.adresse}}    {{participant.email}}    {{participant.societe}}    {{participant.poste}}</span> <img id='t1'  src="assets/image006.png" width="45px" height="40px" (click)="newindex(i) " [routerLink]="['/update-participant']"><img id='t2' src="assets/image007.png" width="45px" height="40px"  (click)="delete(i)">
+        </td>
+
+      </tr>
+    </tbody>
+    </table>
+    </div>
