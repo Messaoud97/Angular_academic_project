@@ -47,8 +47,11 @@ boot-front
 ```
 
 ## Description 
+
 ### src
-#### js
+
+#### javascript
+
 src folder contains components which are simple element to be reused in different containers .
 containers are the pages displayed and where states are managed .
 right now we got two functionnal containers  ( deposit.js , swap.js )
@@ -56,11 +59,13 @@ nav.js is used in both containers  .
 footer.js isnt used this page was meant for metrics and charts about the pools state 
 
 #### css
+
 only App.css and swap1.css are used in containers & components  .
 swap.css got more css classes we may use in the future.
 
 
 ### build
+
 contains artifacts and ABI i'm using with etherjs to call smart contracts .
 
 ## Snippet from deposit
@@ -94,7 +99,7 @@ contains artifacts and ABI i'm using with etherjs to call smart contracts .
     });
 ```
 ```bash
-Every time state of swapp pool address changes useEffect hook calls fetchData() 
+Everytime state of swapp pool address changes useEffect hook calls fetchData() 
 fetchData() is meant to request Tokens from swap pool and iterates over them requesting name and symbol from
 the deployed erc20 token.
 ```
@@ -110,9 +115,7 @@ the deployed erc20 token.
 ```
 
 ```bash
-And the same process repeats for pools fetching (similar code )
+And the same process repeats in swap (similar code )
 ```
 
 
- 
- 
